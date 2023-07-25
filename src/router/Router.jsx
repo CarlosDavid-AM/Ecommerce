@@ -1,10 +1,11 @@
-import { createBrowserRouter } from "react-router-dom"
+import {createBrowserRouter } from "react-router-dom"
 import Home from "../components/pages/Home"
 import Error404 from "../components/pages/Error404" 
 import Products from "../components/pages/Products"
 import App from "../templates/App"
 import Login from "../components/pages/Login"
 import Registro from "../components/pages/Registro"
+import Form from "../components/pages/admin/products/Form"
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     {
         path:"/registro",
         element: <Registro />
+    },
+    {
+        path:"/admin/productos",
+        element: <Form />
     }
     
 ])

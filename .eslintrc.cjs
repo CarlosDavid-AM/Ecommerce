@@ -21,7 +21,7 @@ module.exports = {
     "rules": {
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off",
-        "prettierprettier": [ error, {
+        "prettier/prettier": [ error, {
             "semi": false
         } ]
     }

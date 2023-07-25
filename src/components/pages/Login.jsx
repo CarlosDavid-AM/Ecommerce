@@ -13,17 +13,17 @@ const Login = () => {
         e.preventDefault()
         setError()
 
-        const dato = {
+        const data = {
             email: e.target.email.value,
             password: e.target.password.value
         }
 
-        axios.post(`${API_URL}/public/login`, dato)
+        axios.post(`${API_URL}/public/login`, data)
             .then(resp => {
                     setToken(resp.data.data.token)
                     navigate("/")}
                 )
-            .catch(error => 
+            .catch((error) => 
                 setError(error))
     }
 

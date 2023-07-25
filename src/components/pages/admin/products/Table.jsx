@@ -1,6 +1,6 @@
 import useFetch from "../../hooks/UseFetch"
 
-const Products = () => {
+const Table = () => {
 
     const {data, error, loading} = useFetch("public/products")
 
@@ -10,7 +10,6 @@ const Products = () => {
     return(
         <div>
             <h1>Products</h1>
-            {data.length === 0  && <p>No existen productos</p>}
             {
               data.map(prod =>(
                   <div key={prod.id}> {JSON.stringify(prod)} </div>
@@ -20,4 +19,4 @@ const Products = () => {
     )
 }
 
-export default Products
+export default Table
